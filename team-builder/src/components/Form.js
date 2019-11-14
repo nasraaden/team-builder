@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const MemberForm = (props) =>{
+const Form = (props) => {
 
     const [member, setMember] = useState({name: "", email: "", location: "", role: ""});
 
@@ -21,6 +21,7 @@ const MemberForm = (props) =>{
                 id="name"
                 type="text"
                 name="name"
+                required
                 onChange={handleChange}
                 value= {member.name}
             />
@@ -29,6 +30,7 @@ const MemberForm = (props) =>{
                 id="email"
                 type="email"
                 name="email"
+                required
                 onChange={handleChange}
                 value= {member.email}
             />
@@ -37,23 +39,25 @@ const MemberForm = (props) =>{
                 id="location"
                 type="text"
                 name="location"
+                required
                 onChange={handleChange}
                 value= {member.location}
             />
-            <select id="role" name="role" onChange={handleChange} value= {member.role}> 
+            <select id="role" name="role" required onChange={handleChange} value= {member.role}> 
                 <option>Select Role</option>
                 <option>Project Manager</option>
                 <option>Front End Developer</option>
                 <option>Full Stack Developer</option>
                 <option>Graphic Artist</option>
                 <option>Illustrator</option>
+                
                 onChange={handleChange}
                 value= {member.role}
             </select>
             <button type="submit">Add Member</button>
     
         </form>
-    )
-}
+    );
+};
 
-export default MemberForm;
+export default Form;
