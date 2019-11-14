@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo|Comfortaa&display=swap');
+
+.App {
+  text-align: center;
+  
+}
+
+.App h1{
+  font-family: 'Comfortaa', cursive;
+  color: lightpink;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Comfortaa', cursive;
+}
+
+input, select{
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+  border: 2px solid lightpink;
+  font-family: 'Comfortaa', cursive;
+}
+
+button{
+  background: lightpink;
+  padding: 1%;
+  border-radius: 5px;
+  margin: 1%;
+  font-family: 'Comfortaa', cursive;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+button:hover{
+  transform: translateY(-1px);
+  background: pink;
+}
+
+/* .member-container{
+
+} */
+
+
